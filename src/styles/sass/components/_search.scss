@@ -1,0 +1,41 @@
+.search {
+    // top: 7.5rem;
+    // right: 22rem;
+    // position: absolute;
+    overflow: hidden;
+    
+
+    &__input {
+        display: none;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid white;
+        color: #fff;
+        font-size: 1.6rem;
+        transition: background-color .4s;
+        padding: 1rem;
+
+        &::-webkit-search-cancel-button {
+            display: none;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &--shown {
+            display: inline-block;
+            animation: searchAnimation .4s;
+        }
+    }
+
+    &__icon {
+        font-size: 2.5rem;
+        color: #fff;
+    }
+
+    &__icon:hover {
+        font-size: 2.5rem;
+        color: #fff;
+    }
+}

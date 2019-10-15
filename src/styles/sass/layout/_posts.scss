@@ -1,0 +1,22 @@
+.posts {
+
+//     height: 100vh;
+//     width: 100vw;
+//   //  background-color: rgba(#c0f8ff, 0.4);
+//     position: absolute;
+ 
+
+  &__list {
+    width: 70vw;
+    // background-color: rgba(#c0f8ff, 0.4);
+    //position: absolute;
+    // margin: 25rem auto auto auto;
+    margin: 15rem auto 7rem auto;
+    padding-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden; 
+  }
+}

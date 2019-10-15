@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Test Task</title>
+  </head>
+  <body>
+    <div class="container">
+      <navigation class="navigation__container">
+        <button class="btn__create">
+          <i class="ion-android-add btn__create--icon"></i>Create new post
+        </button>
+        <div class="search">
+          <!-- <label for="search">Search the site:</label> -->
+          <input
+            type="search"
+            id="search"
+            class="search__input"
+            name="q"
+            aria-label="Search"
+          />
+          <button class="btn__search">
+            <i class="ion-ios-search search__icon"></i>
+          </button>
+        </div>
+      </navigation>
+      <div class="posts__list">
+        <div class="spinner" id="spinner">
+          <i class="ion-load-c spinner__icon"></i>
+        </div>
+      </div>
+      <button class="btn__more-posts">Load more posts</button>
+
+      <div class="popup">
+        
+        <div class="popup__modal">
+          <h2 class="heading-2 u-center-text">Create new Post</h2>
+          <form action="">
+            <label for="title" class="popup__text">Title (required)</label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              size="50"
+              class="popup__title-input"
+            />
+            <span class="error-title"></span>
+
+            <label for="post" class="popup__text">Your post (required)</label>
+            <!-- <input type="text" rows="4" cols="50" id="post" name="post"  class="popup__post-input" /> -->
+            <textarea
+              class="popup__post-input"
+              rows="4"
+              cols="50"
+              id="post"
+              name="post"
+            ></textarea>
+            <span class="error-comment"></span>
+
+            <input type="submit" value="Add post" class="btn__submit" />
+          </form>
+
+          <button class="btn__close-pop">
+            <i class="ion-ios-close-outline popup__icon"></i>
+          </button>
+        </div>
+        <div class="popup__background"></div>
+      </div>
+
+    </div>
+
+    <!-- <script type="text/javascript" src="js/bundle.js"></script> -->
+  </body>
+</html>

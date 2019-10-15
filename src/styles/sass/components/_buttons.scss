@@ -1,0 +1,139 @@
+.btn {
+  &__create {
+    padding: 1.5rem 3rem;
+    background-color: rgba($color-blue-light, 0.6);
+    border: .2rem solid white;
+
+    border-radius: 5rem;
+    cursor: pointer;
+
+    color: #fff;
+    font-size: 1.8rem;
+    font-family: "Lato", sans-serif;
+
+    // top: 5rem;
+    // left: 22rem;
+    // position: absolute;
+
+    transition: all 0.2s;
+
+    &--icon {
+      margin-right: 1rem;
+      font-size: 2rem;
+    }
+
+    &:hover {
+      background-color: rgba($color-blue-light, 0.8);
+    }
+
+    &:hover > &--icon {
+      animation: rotateAnimation 1s;
+      display: inline-block;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__search,
+  &__post-delete {
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__post-delete {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+  }
+
+  &__post-details {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(0, 107, 179);
+    color: rgb(0, 107, 179);
+    font-size: 1.6rem;
+    margin-right: 3rem;
+    cursor: pointer;
+    
+
+    span {
+        transition: all .2s;
+    }
+    &:hover > span {
+        margin-left: .4rem;
+    }
+
+    &:hover {
+
+    }
+
+    &:focus {
+        outline: none;
+    }
+  }
+
+  &__close-pop {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      font-size: 3rem;
+      color: red;
+      background-color: transparent;
+      border: none;
+         cursor: pointer;
+      &:focus {
+          outline: none;
+      }
+  }
+
+  &__submit {
+      color:#fff;
+      font-size: 1.6rem;
+      font-weight: 300;
+    border: 2px solid $color-blue-dark;
+
+    background: linear-gradient(to right bottom, $color-blue-light, $color-blue-dark);
+      padding: 1rem 2rem;
+      align-self: stretch;
+      cursor: pointer;
+      transition: all .2s;
+
+      margin-top: 3rem;
+      &:focus {
+          outline: none;
+      }
+
+      &:hover {
+        
+      }
+  }
+
+  &__more-posts {
+    margin-bottom: 8rem;
+    padding: 1.5rem 3rem;
+    background-color: rgba($color-blue-light, 0.6);
+    border: .2rem solid white;
+
+    border-radius: 5rem;
+    cursor: pointer;
+
+    color: #fff;
+    font-size: 1.8rem;
+    font-family: "Lato", sans-serif;
+    transition: all 0.2s;
+
+    &:focus {
+      outline: none;
+    }
+
+  }
+}
