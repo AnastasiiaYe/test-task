@@ -39,6 +39,7 @@ Minor improvements of the design. <br>
 Functionality: <br>
 API: To the Project will be included GET/POST methods. Currently add / delete changes are represented only on UI. <br>
 Documentation: Deployment instructions will be extended. <br>
+Logging: Logging functionality would be added in the nearest future. <br>
 
 ## Author
 Anastasiia Yemelianova: https://www.linkedin.com/in/anastasiia-y/.
