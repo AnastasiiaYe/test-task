@@ -15,6 +15,9 @@ Fake API is used to represent the data: http://jsonplaceholder.typicode.com/post
 
 In the Project directory, you can run:
 
+### `npm install`
+Installs all the required dependencies on your local machine.
+
 ### `npm start`
 Runs the app in the development mode.<br>
 Will automaticaly open a new browser tab.<br>
@@ -27,15 +30,15 @@ Builds the app for the production.
 Runs the app in the production mode.
 
 ## Future improvements
-In the nearest future it is planned to implement a couple of improvements and features:
-Design:
-Responsive design: Currently project is written using Flexbox, responsive design will be provided, including media queries;
-Themes: Project will include possibility to change by user the desing thema (using 3 pre-set themes);
-Minor improvements of the design.
+In the nearest future it is planned to implement a couple of improvements and features: <br>
+Design: <br>
+Responsive design: Currently project is written using Flexbox, responsive design will be provided, including media queries; <br>
+Themes: Project will include possibility to change by user the desing thema (using 3 pre-set themes); <br>
+Minor improvements of the design. <br>
 
-Functionality:
-API: To the Project will be included GET/POST methods. Currently add / delete changes are represented only on UI.
-Documentation: Deployment instructions will be extended.
+Functionality: <br>
+API: To the Project will be included GET/POST methods. Currently add / delete changes are represented only on UI. <br>
+Documentation: Deployment instructions will be extended. <br>
 
 ## Author
 Anastasiia Yemelianova: https://www.linkedin.com/in/anastasiia-y/.
