@@ -3,11 +3,11 @@
 The Project represents test technical task. <br>
 The objective of the Project is to fetch and manipulate the data from provided API.
 
-##Tech Stack used
+## Tech Stack used
 
 The Project is written in Vanilla JavaScript (ES8), using HTML5 and CSS3, Flexbox. 
 
-##API Reference
+## API Reference
 
 Fake API is used to represent the data: http://jsonplaceholder.typicode.com/posts.
 
