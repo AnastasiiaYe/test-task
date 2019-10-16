@@ -1,20 +1,13 @@
 .btn {
   &__create {
-    padding: 1.5rem 3rem;
     background-color: rgba($color-blue-light, 0.6);
-    border: .2rem solid white;
-
+    padding: 1.5rem 3rem;
+    border: 2px solid $color-white;
     border-radius: 5rem;
-    cursor: pointer;
-
-    color: #fff;
+    color: $color-white;
     font-size: 1.8rem;
     font-family: "Lato", sans-serif;
-
-    // top: 5rem;
-    // left: 22rem;
-    // position: absolute;
-
+    cursor: pointer;
     transition: all 0.2s;
 
     &--icon {
@@ -34,18 +27,26 @@
     &:focus {
       outline: none;
     }
+
+    &:active {
+      transform: translateY(1px);
+    }
   }
 
   &__search,
   &__post-delete {
-    font-size: 1.6rem;
-    color: #fff;
+    color: $color-white;
     background-color: transparent;
     border: none;
     cursor: pointer;
+    transition: all 0.2s;
 
     &:focus {
       outline: none;
+    }
+
+    &:active {
+      transform: translateY(1px);
     }
   }
 
@@ -55,78 +56,93 @@
     right: 2rem;
   }
 
+  &__search--icon {
+    font-size: 2.5rem;
+  }
+
+  &__post-delete--icon {
+    font-size: 2.5rem;
+    color: $color-red;
+  }
+
   &__post-details {
     background-color: transparent;
-    border: none;
-    border-bottom: 1px solid rgb(0, 107, 179);
-    color: rgb(0, 107, 179);
     font-size: 1.6rem;
+    color: $color-blue;
+    border: none;
+    border-bottom: 1px solid $color-blue;
     margin-right: 3rem;
     cursor: pointer;
-    
 
     span {
-        transition: all .2s;
+      transition: all 0.2s;
     }
+
     &:hover > span {
-        margin-left: .4rem;
-    }
-
-    &:hover {
-
+      margin-left: 0.4rem;
     }
 
     &:focus {
-        outline: none;
+      outline: none;
     }
   }
 
-  &__close-pop {
-      position: absolute;
-      top: 2rem;
-      right: 2rem;
+  &__close-popup {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &--icon {
       font-size: 3rem;
-      color: red;
-      background-color: transparent;
-      border: none;
-         cursor: pointer;
-      &:focus {
-          outline: none;
-      }
+      color: $color-red;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(1px);
+    }
   }
 
   &__submit {
-      color:#fff;
-      font-size: 1.6rem;
-      font-weight: 300;
+    background: linear-gradient(
+      to right bottom,
+      $color-blue-light,
+      $color-blue-dark
+    );
+    align-self: stretch;
+    color: $color-white;
+    font-size: 1.6rem;
+    font-weight: 300;
     border: 2px solid $color-blue-dark;
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: all 0.2s;
 
-    background: linear-gradient(to right bottom, $color-blue-light, $color-blue-dark);
-      padding: 1rem 2rem;
-      align-self: stretch;
-      cursor: pointer;
-      transition: all .2s;
+    &:focus {
+      outline: none;
+    }
 
-      margin-top: 3rem;
-      &:focus {
-          outline: none;
-      }
-
-      &:hover {
-        
-      }
+    &:active {
+      transform: translateY(1px);
+    }
   }
 
   &__more-posts {
+    background-color: rgba($color-blue-light, 0.6);
+    border: 2px solid white;
+    border-radius: 5rem;
     margin-bottom: 8rem;
     padding: 1.5rem 3rem;
-    background-color: rgba($color-blue-light, 0.6);
-    border: .2rem solid white;
-
-    border-radius: 5rem;
     cursor: pointer;
-
-    color: #fff;
+    color: $color-white;
     font-size: 1.8rem;
     font-family: "Lato", sans-serif;
     transition: all 0.2s;
@@ -134,6 +150,9 @@
     &:focus {
       outline: none;
     }
-
+    
+    &:active {
+      transform: translateY(1px);
+    }
   }
 }

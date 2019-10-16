@@ -1,12 +1,13 @@
 {
-  "name": "prodyna-test-task",
+  "name": "test-task",
   "version": "1.0.0",
-  "description": "Prodyna Test Task",
+  "description": "Test Task",
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    "start": "webpack-dev-server --mode development --open",
+    "production": "webpack-dev-server --mode production --open"
   },
   "author": "Anastasiia Yemelianova",
   "license": "ISC",

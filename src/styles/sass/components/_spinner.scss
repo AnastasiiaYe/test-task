@@ -1,8 +1,6 @@
 .spinner {
-    margin: 20rem auto;
-    font-size: 8rem;
-    color: white;
-
-    animation: rotateAnimation .8s linear infinite;
+  margin: 20rem auto;
+  font-size: 8rem;
+  color: $color-white;
+  animation: rotateAnimation 0.8s linear infinite;
 }
-

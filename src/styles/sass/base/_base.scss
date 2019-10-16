@@ -1,39 +1,40 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 62.5%; //1rem = 10px;
+  font-size: 62.5%; //1rem = 10px;
 }
 
 body {
-    box-sizing: border-box; 
-    //test
-    background-image: url('/img/background.jpg');
+  box-sizing: border-box;
+  background-image: url("/img/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+  //Frosted Glass
+  &::after {
+    content: "";
+    z-index: -1;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-image: linear-gradient(
+        rgba(250, 250, 250, 0.1),
+        rgba(255, 255, 255, 0.1)
+      ),
+      url("/img/background.jpg");
     background-size: cover;
-    background-attachment: fixed; 
-
-    &::after {
-        content: "";
-        z-index: -1;
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(255,255,255, 0.9);
-
-        background-image: linear-gradient(rgba(250, 250, 250, 0.1), rgba(255, 255, 255, 0.1)), url('/img/background.jpg');
-        background-size: cover;
-        background-attachment: fixed; 
-        filter: blur(10px);
-        // clip: rect(216px,150px,216px,70px);
-        clip-path: polygon(18% 0%, 82% 0%, 82% 100%, 18% 100%);
-      }
+    background-attachment: fixed;
+    filter: blur(10px);
+    clip-path: polygon(18% 0%, 82% 0%, 82% 100%, 18% 100%);
+  }
 }
-

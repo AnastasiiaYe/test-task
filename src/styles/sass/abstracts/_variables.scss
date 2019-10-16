@@ -1,13 +1,12 @@
 //COLORS
-$color-primary: #fff;
+$color-white: #fff;
 $color-blue-light: rgb(50, 190, 255);
-$color-blue:rgb(0, 107, 179);
+$color-blue: rgb(0, 107, 179);
 $color-blue-dark: rgb(0, 67, 112);
 $color-grey: rgb(121, 121, 121);
 $color-grey-light: rgb(192, 192, 192);
-
-
+$color-red: rgb(187, 3, 3);
 
 //SHADOWS
-$shadow: 0rem 0rem .5rem $color-grey;
-$shadow-light: 0rem 0rem .5rem $color-grey-light;
+$shadow: 0rem 0rem 0.5rem $color-grey;
+$shadow-light: 0rem 0rem 0.5rem $color-grey-light;
